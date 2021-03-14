@@ -44,6 +44,15 @@
     background-size: contain;
   }
 
+  &--right-align {
+    text-align: right;
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+  }
+
   @media screen and (max-width: 1024px) {
     font-size: 30px;
     line-height: 40px;
