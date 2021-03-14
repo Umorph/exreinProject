@@ -52,3 +52,30 @@
     margin-top: 10px;
   }
 }
+
+.main-content__preview {
+  margin: 65px 0 0;
+  padding: 75px 0 50px;
+  width: 100%;
+
+  background-image: url("../img/preview-bg-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 10px;
+  }
+}
