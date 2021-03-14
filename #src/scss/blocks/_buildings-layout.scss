@@ -1,0 +1,30 @@
+.buildings-layout {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.buildings-layout__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  list-style: none;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.buildings-layout__item {
+  margin: 0;
+  padding: 0;
+}
