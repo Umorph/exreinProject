@@ -16,6 +16,10 @@
   line-height: 59px;
   color: $trueBlack;
 
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
   @media screen and (max-width: 1024px) {
     font-size: 40px;
     line-height: 49px;
