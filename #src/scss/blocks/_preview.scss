@@ -1,0 +1,70 @@
+.preview {
+  margin: 0;
+  padding: 75px 0 65px;
+  display: flex;
+
+  background: $darkBlue;
+}
+
+.preview__content-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.preview__heading {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: $trueWhite;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+
+    display: block;
+    width: 130px;
+    height: 16px;
+
+    background-image: url("../img/arrow-long.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--right-align {
+    text-align: right;
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

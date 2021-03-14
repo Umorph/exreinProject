@@ -1,0 +1,151 @@
+.header {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+
+  background-color: $darkBlue;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  padding: 25px 10px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 650px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin: 0;
+  padding: 0;
+}
+
+.header__links-inner {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 20px 0 0;
+  }
+}
+
+.header__phone-number {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $trueWhite;
+  text-decoration: none;
+
+  background-color: $darkBlue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 0;
+    height: 1px;
+
+    background-color: $trueWhite;
+    border-radius: 1px;
+
+    @include smooth;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-top: 10px;
+  }
+}
+
+.header__selection-link {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 0 70px;
+  padding: 10px 60px;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $trueBlack;
+  text-decoration: none;
+
+  background: $trueWhite;
+  border-radius: 40px;
+
+  @include smooth;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 0 0 40px;
+    padding: 10px 40px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0 0 20px;
+    padding: 10px 30px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin: 10px 0 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 10px 40px;
+  }
+}

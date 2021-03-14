@@ -1,0 +1,249 @@
+.item-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-card__preview {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+.item-card__image-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.item-card__building-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-width: 386px;
+
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.item-card__building-name {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.item-card__subheading {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $trueWhite;
+  text-transform: uppercase;
+
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.45);
+
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.item-card__building-features {
+  position: relative;
+
+  margin: 20px 0 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  list-style: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background-color: $darkGrey;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.item-card__features-item {
+  margin: 10px 0 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.item-card__feature-name {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkGrey;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.item-card__feature-value {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $trueBlack;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.item-card__info-wrapper {
+  box-sizing: border-box;
+  margin: 10px 0 0;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  max-width: 345px;
+
+  background: #F8F8F8;
+  border-radius: 20px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 5px 10px;
+  }
+}
+
+.item-card__building-type {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $deepDarkGrey;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.item-card__profit-wrapper {
+  margin: 0;
+  padding: 0;
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.item-card__profit-topic {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkGrey;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.item-card__profit-value {
+  box-sizing: border-box;
+  display: block;
+  margin: 5px 0 0;
+  padding: 5px 20px;
+
+  font-family: $gilroy;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  color: $trueWhite;
+  text-align: center;
+
+  background: $greenMain;
+  border-radius: 20px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 5px 10px;
+
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+.item-card__building-price {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $trueBlack;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.item-card__hint {
+  margin: 10px 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkBlue;
+}
