@@ -32,3 +32,23 @@
   margin: 45px auto 0;
   padding: 0;
 }
+
+.main-content__buildings-layout {
+  margin: 45px auto 0;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 10px;
+  }
+}
