@@ -61,7 +61,6 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-
   @media screen and (max-width: 1024px) {
     margin-top: 40px;
   }
@@ -95,4 +94,20 @@
 .main-content__details-layout {
   margin: 30px auto 0;
   padding: 0 10px;
+}
+
+.main-content__tip {
+  margin: 65px auto 0;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-top: 20px;
+  }
 }
