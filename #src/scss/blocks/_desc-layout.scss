@@ -1,0 +1,23 @@
+.desc-layout {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 325px;
+  grid-gap: 70px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.desc-layout__desc {
+  margin: 0;
+  padding: 0;
+}
+
+.desc-layout__analytics {
+  margin: 0;
+}
