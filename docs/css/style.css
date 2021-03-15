@@ -758,7 +758,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 100%;
   height: auto;
-  max-width: 386px;
+  max-width: 355px;
   border-radius: 20px;
   -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
@@ -2546,10 +2546,6 @@ input[type="radio"].visually-hidden {
     -webkit-transform: translateX(-45px);
         -ms-transform: translateX(-45px);
             transform: translateX(-45px);
-  }
-
-  .item-card {
-    width: 300px;
   }
 
   .buildings-layout {

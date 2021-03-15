@@ -7,7 +7,7 @@
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 300px;
+    //width: 300px;
   }
 
   @media screen and (max-width: 600px) {
@@ -44,7 +44,7 @@
   padding: 0;
   width: 100%;
   height: auto;
-  max-width: 386px;
+  max-width: 355px;
 
   border-radius: 20px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
