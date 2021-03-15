@@ -1,9 +1,16 @@
 .tip {
   box-sizing: border-box;
   margin: 0;
-  padding: 10px 20px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
+}
+
+.tip__inner {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 20px;
+  width: 100%;
   display: flex;
 
   background: $darkBlue;

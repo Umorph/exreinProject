@@ -1,14 +1,14 @@
 .banner {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   width: calc(100% - 8px);
   max-width: 1200px;
 
-  background-color: $darkBlue;
-  border: 4px solid #D0D0D0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  //background-color: $darkBlue;
+  //border: 4px solid #D0D0D0;
+  //box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  //border-radius: 20px;
 }
 
 .banner__inner {
@@ -18,6 +18,11 @@
   grid-template-columns: 1fr 1fr 0.86fr;
   grid-column-gap: 20px;
   grid-row-gap: 25px;
+
+  background-color: $darkBlue;
+  border: 4px solid #D0D0D0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 
   text-decoration: none;
 
