@@ -99,8 +99,16 @@
 .sidebar__consult {
   margin: 25px 0 0;
   align-self: stretch;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
 }
 
 .sidebar__plan {
   margin: 25px 0 0;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
 }

@@ -2845,6 +2845,14 @@ input[type="radio"].visually-hidden {
   .sidebar__price-wrapper {
     grid-area: auto;
   }
+
+  .sidebar__consult {
+    margin-top: 0;
+  }
+
+  .sidebar__plan {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
