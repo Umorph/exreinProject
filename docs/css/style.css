@@ -939,7 +939,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
   display: -webkit-box;
@@ -993,7 +993,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
   display: -webkit-box;
@@ -1705,7 +1705,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
   display: -webkit-box;
@@ -1832,7 +1832,7 @@ input[type="radio"].visually-hidden {
 
 .main-content__tagline {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .main-content__banner {
@@ -1852,19 +1852,19 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
 }
 
 .main-content__features {
   margin: 35px auto 0;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .main-content__details-layout {
   margin: 30px auto 0;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .main-content__tip {
@@ -1873,7 +1873,7 @@ input[type="radio"].visually-hidden {
 
 .main-content__desc-layout {
   margin: 65px auto 0;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .main-content__map {
@@ -1890,7 +1890,7 @@ input[type="radio"].visually-hidden {
 
 .main-content__about-layout {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .footer {
@@ -1907,7 +1907,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
   max-width: 1200px;
   display: -webkit-box;
@@ -2143,7 +2143,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   max-width: 750px;
   width: 100%;
 }
@@ -2338,6 +2338,8 @@ input[type="radio"].visually-hidden {
 
   .analytics {
     padding: 20px 40px;
+    -ms-flex-item-align: self-start;
+        align-self: self-start;
   }
 
   .analytics__heading {
