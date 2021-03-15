@@ -1,0 +1,97 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar__price-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    grid-area: 1 / 1 / 2 / 3;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-area: auto;
+  }
+}
+
+.sidebar__price {
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  color: $trueBlack;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.sidebar__hint {
+  margin: 10px 0 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkBlue;
+}
+
+.sidebar__help-button {
+  box-sizing: border-box;
+  display: block;
+  margin: 20px 0 0;
+  padding: 10px 60px;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $trueWhite;
+  text-decoration: none;
+  text-align: center;
+
+  background: #CBA55C;
+  border-radius: 40px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10px 30px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.sidebar__consult {
+  margin: 35px 0 0;
+}
+
+.sidebar__plan {
+  margin: 25px 0 0;
+}
