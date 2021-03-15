@@ -1,0 +1,138 @@
+.features {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  list-style: none;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.features__item {
+  position: relative;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: #f8f8f8;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-25px);
+  }
+
+  &--profitability-icon {
+    &::before {
+      background-image: url("../img/profitability-icon.svg");
+    }
+  }
+
+  &--deadline-icon {
+    &::before {
+      background-image: url("../img/deadline-icon.svg");
+    }
+  }
+
+  &--footage-icon {
+    &::before {
+      background-image: url("../img/footage-icon.svg");
+    }
+  }
+
+  &--income-icon {
+    &::before {
+      background-image: url("../img/income-icon.svg");
+    }
+  }
+
+  &--rent-icon {
+    &::before {
+      background-image: url("../img/rent-icon.svg");
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 130px;
+
+    &::before {
+      top: 30px;
+
+      width: 40px;
+      height: 40px;
+
+      transform: translateX(-20px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 130px;
+  }
+}
+
+.features__topic {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkGrey;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.features__value {
+  display: block;
+  margin: 60px 0 0;
+  padding: 0;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkBlue;
+}

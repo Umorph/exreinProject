@@ -1,0 +1,40 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gallery__image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.gallery__list {
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  list-style: none;
+}
+
+.gallery__item {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__mini-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+
+  cursor: pointer;
+}
