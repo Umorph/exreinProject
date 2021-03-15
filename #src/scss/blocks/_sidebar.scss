@@ -12,7 +12,7 @@
     grid-gap: 20px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 }
@@ -31,7 +31,7 @@
     align-items: center;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     grid-area: auto;
   }
 }
@@ -97,7 +97,8 @@
 }
 
 .sidebar__consult {
-  margin: 35px 0 0;
+  margin: 25px 0 0;
+  align-self: stretch;
 }
 
 .sidebar__plan {

@@ -1378,7 +1378,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sidebar__consult {
-  margin: 35px 0 0;
+  margin: 25px 0 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }
 
 .sidebar__plan {
@@ -2563,6 +2565,18 @@ input[type="radio"].visually-hidden {
     margin-top: 10px;
   }
 
+  .consult {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+
+  .consult__image {
+    width: 120px;
+  }
+
   .sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2763,6 +2777,14 @@ input[type="radio"].visually-hidden {
     line-height: 25px;
   }
 
+  .consult__image {
+    width: 100px;
+  }
+
+  .consult__image {
+    width: 80px;
+  }
+
   .map__wrapper {
     height: 400px;
   }
@@ -2814,6 +2836,14 @@ input[type="radio"].visually-hidden {
 @media screen and (max-width: 600px) {
   .item-card {
     width: 100%;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar__price-wrapper {
+    grid-area: auto;
   }
 }
 
@@ -2889,14 +2919,6 @@ input[type="radio"].visually-hidden {
 
   .features__item {
     width: 130px;
-  }
-
-  .sidebar {
-    grid-template-columns: 1fr;
-  }
-
-  .sidebar__price-wrapper {
-    grid-area: auto;
   }
 
   .tip__text {
