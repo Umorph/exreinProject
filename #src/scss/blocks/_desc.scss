@@ -25,6 +25,10 @@
     font-size: 22px;
     line-height: 25px;
   }
+
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
 }
 
 .desc__paragraph {
@@ -36,7 +40,6 @@
   font-size: 18px;
   line-height: 22px;
   color: $trueBlack;
-  text-align: center;
 
   &:not(:first-child) {
     margin-top: 20px;

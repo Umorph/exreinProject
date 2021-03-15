@@ -80,6 +80,14 @@
   background: #CBA55C;
   border-radius: 40px;
 
+  @include smooth;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #CBA55C;
+  }
+
   @media screen and (max-width: 1024px) {
     padding: 10px 30px;
 
