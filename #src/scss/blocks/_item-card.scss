@@ -7,6 +7,17 @@
   align-items: center;
 }
 
+.item-card__link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-decoration: none;
+}
+
 .item-card__preview {
   position: relative;
 

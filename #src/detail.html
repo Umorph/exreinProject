@@ -79,16 +79,16 @@
       <img class="gallery__image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
       </ul>
     </section>
@@ -109,7 +109,9 @@
       </div>
       <div class="sidebar__plan plan">
         <p class="plan__hint">Планировка квартиры</p>
-        <img class="plan__image" src="img/house-plan.png" alt="Планировка квартиры">
+        <a class="plan__link" href="#">
+          <img class="plan__image" src="img/house-plan.png" alt="Планировка квартиры">
+        </a>
       </div>
     </aside>
   </div>
@@ -174,112 +176,118 @@
     </div>
     <ul class="buildings-layout__list">
       <li class="buildings-layout__item item-card">
-        <figure class="item-card__preview">
-          <picture class="item-card__image-wrapper">
-            <source srcset="img/victory-park.webp" type="image/webp">
-            <img class="item-card__building-image" src="img/victory-park.jpg" alt="Здание 'Виктори Парк'">
-          </picture>
-          <figcaption class="item-card__building-name">
-            <h3 class="item-card__subheading">
-              Виктори Парк
-            </h3>
-          </figcaption>
-        </figure>
-        <ul class="item-card__building-features">
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Площадь</b>
-            <p class="item-card__feature-value">48м<sup>2</sup></p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Кол-во комнат</b>
-            <p class="item-card__feature-value">2</p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Срок сдачи</b>
-            <p class="item-card__feature-value">2 года</p>
-          </li>
-        </ul>
-        <div class="item-card__info-wrapper">
-          <b class="item-card__building-type">Аппартаменты</b>
-          <div class="item-card__profit-wrapper">
-            <p class="item-card__profit-topic">Прибыль</p>
-            <p class="item-card__profit-value">+45%</p>
+        <a class="item-card__link" href="#">
+          <figure class="item-card__preview">
+            <picture class="item-card__image-wrapper">
+              <source srcset="img/victory-park.webp" type="image/webp">
+              <img class="item-card__building-image" src="img/victory-park.jpg" alt="Здание 'Виктори Парк'">
+            </picture>
+            <figcaption class="item-card__building-name">
+              <h3 class="item-card__subheading">
+                Виктори Парк
+              </h3>
+            </figcaption>
+          </figure>
+          <ul class="item-card__building-features">
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Площадь</b>
+              <p class="item-card__feature-value">48м<sup>2</sup></p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Кол-во комнат</b>
+              <p class="item-card__feature-value">2</p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Срок сдачи</b>
+              <p class="item-card__feature-value">2 года</p>
+            </li>
+          </ul>
+          <div class="item-card__info-wrapper">
+            <b class="item-card__building-type">Аппартаменты</b>
+            <div class="item-card__profit-wrapper">
+              <p class="item-card__profit-topic">Прибыль</p>
+              <p class="item-card__profit-value">+45%</p>
+            </div>
+            <p class="item-card__building-price">от 8 000 000</p>
           </div>
-          <p class="item-card__building-price">от 8 000 000</p>
-        </div>
-        <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+          <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+        </a>
       </li>
       <li class="buildings-layout__item item-card">
-        <figure class="item-card__preview">
-          <picture class="item-card__image-wrapper">
-            <source srcset="img/sidney-city.webp" type="image/webp">
-            <img class="item-card__building-image" src="img/sidney-city.jpg" alt="Здание 'Сидней Сити'">
-          </picture>
-          <figcaption class="item-card__building-name">
-            <h3 class="item-card__subheading">
-              Cидней Сити
-            </h3>
-          </figcaption>
-        </figure>
-        <ul class="item-card__building-features">
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Площадь</b>
-            <p class="item-card__feature-value">48м<sup>2</sup></p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Кол-во комнат</b>
-            <p class="item-card__feature-value">2</p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Срок сдачи</b>
-            <p class="item-card__feature-value">2 года</p>
-          </li>
-        </ul>
-        <div class="item-card__info-wrapper">
-          <b class="item-card__building-type">Аппартаменты</b>
-          <div class="item-card__profit-wrapper">
-            <p class="item-card__profit-topic">Прибыль</p>
-            <p class="item-card__profit-value">+45%</p>
+        <a class="item-card__link" href="#">
+          <figure class="item-card__preview">
+            <picture class="item-card__image-wrapper">
+              <source srcset="img/sidney-city.webp" type="image/webp">
+              <img class="item-card__building-image" src="img/sidney-city.jpg" alt="Здание 'Сидней Сити'">
+            </picture>
+            <figcaption class="item-card__building-name">
+              <h3 class="item-card__subheading">
+                Cидней Сити
+              </h3>
+            </figcaption>
+          </figure>
+          <ul class="item-card__building-features">
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Площадь</b>
+              <p class="item-card__feature-value">48м<sup>2</sup></p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Кол-во комнат</b>
+              <p class="item-card__feature-value">2</p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Срок сдачи</b>
+              <p class="item-card__feature-value">2 года</p>
+            </li>
+          </ul>
+          <div class="item-card__info-wrapper">
+            <b class="item-card__building-type">Аппартаменты</b>
+            <div class="item-card__profit-wrapper">
+              <p class="item-card__profit-topic">Прибыль</p>
+              <p class="item-card__profit-value">+45%</p>
+            </div>
+            <p class="item-card__building-price">от 8 000 000</p>
           </div>
-          <p class="item-card__building-price">от 8 000 000</p>
-        </div>
-        <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+          <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+        </a>
       </li>
       <li class="buildings-layout__item item-card">
-        <figure class="item-card__preview">
-          <picture class="item-card__image-wrapper">
-            <source srcset="img/zorge.webp" type="image/webp">
-            <img class="item-card__building-image" src="img/zorge.jpg" alt="Здание 'Зорге 9'">
-          </picture>
-          <figcaption class="item-card__building-name">
-            <h3 class="item-card__subheading">
-              Зорге 9
-            </h3>
-          </figcaption>
-        </figure>
-        <ul class="item-card__building-features">
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Площадь</b>
-            <p class="item-card__feature-value">48м<sup>2</sup></p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Кол-во комнат</b>
-            <p class="item-card__feature-value">2</p>
-          </li>
-          <li class="item-card__features-item">
-            <b class="item-card__feature-name">Срок сдачи</b>
-            <p class="item-card__feature-value">2 года</p>
-          </li>
-        </ul>
-        <div class="item-card__info-wrapper">
-          <b class="item-card__building-type">Аппартаменты</b>
-          <div class="item-card__profit-wrapper">
-            <p class="item-card__profit-topic">Прибыль</p>
-            <p class="item-card__profit-value">+45%</p>
+        <a class="item-card__link" href="#">
+          <figure class="item-card__preview">
+            <picture class="item-card__image-wrapper">
+              <source srcset="img/zorge.webp" type="image/webp">
+              <img class="item-card__building-image" src="img/zorge.jpg" alt="Здание 'Зорге 9'">
+            </picture>
+            <figcaption class="item-card__building-name">
+              <h3 class="item-card__subheading">
+                Зорге 9
+              </h3>
+            </figcaption>
+          </figure>
+          <ul class="item-card__building-features">
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Площадь</b>
+              <p class="item-card__feature-value">48м<sup>2</sup></p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Кол-во комнат</b>
+              <p class="item-card__feature-value">2</p>
+            </li>
+            <li class="item-card__features-item">
+              <b class="item-card__feature-name">Срок сдачи</b>
+              <p class="item-card__feature-value">2 года</p>
+            </li>
+          </ul>
+          <div class="item-card__info-wrapper">
+            <b class="item-card__building-type">Аппартаменты</b>
+            <div class="item-card__profit-wrapper">
+              <p class="item-card__profit-topic">Прибыль</p>
+              <p class="item-card__profit-value">+45%</p>
+            </div>
+            <p class="item-card__building-price">от 8 000 000</p>
           </div>
-          <p class="item-card__building-price">от 8 000 000</p>
-        </div>
-        <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+          <p class="item-card__hint">До повышения цен на объект осталось 9 дней</p>
+        </a>
       </li>
     </ul>
   </section>
@@ -307,6 +315,13 @@
     </div>
   </div>
 </footer>
+<div class="modal">
+  <button class="modal__close-button" type="button" onclick="toggleModal()"><span class="visually-hidden">Закрыть окно</span></button>
+  <div class="modal__inner">
+    <img class="modal__img" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+  </div>
+</div>
 <script src="js/textShadow.min.js"></script>
+<script src="js/modal.min.js"></script>
 </body>
 </html>
