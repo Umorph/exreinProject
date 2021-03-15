@@ -79,16 +79,16 @@
       <img class="gallery__image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
         <li class="gallery__item">
-          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+          <img class="gallery__mini-image" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'" onclick="toggleModal()">
         </li>
       </ul>
     </section>
@@ -109,7 +109,9 @@
       </div>
       <div class="sidebar__plan plan">
         <p class="plan__hint">Планировка квартиры</p>
-        <img class="plan__image" src="img/house-plan.png" alt="Планировка квартиры">
+        <a class="plan__link" href="#">
+          <img class="plan__image" src="img/house-plan.png" alt="Планировка квартиры">
+        </a>
       </div>
     </aside>
   </div>
@@ -313,6 +315,13 @@
     </div>
   </div>
 </footer>
+<div class="modal">
+  <button class="modal__close-button" type="button" onclick="toggleModal()"><span class="visually-hidden">Закрыть окно</span></button>
+  <div class="modal__inner">
+    <img class="modal__img" src="img/sidney-city-big.jpg" alt="Фотография комплекса 'Сидней Сити'">
+  </div>
+</div>
 <script src="js/textShadow.min.js"></script>
+<script src="js/modal.min.js"></script>
 </body>
 </html>
