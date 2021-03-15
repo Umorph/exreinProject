@@ -2618,6 +2618,11 @@ input[type="radio"].visually-hidden {
     font-weight: 600;
   }
 
+  .analytics__list {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
   .desc-layout {
     grid-template-columns: 1fr;
   }
