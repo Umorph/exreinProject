@@ -37,8 +37,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-
+  //align-items: center;
+  align-items: flex-start;
   list-style: none;
 
   @media screen and (max-width: 1024px) {
@@ -79,6 +79,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+  //text-align: center;
   color: $trueBlack;
 }

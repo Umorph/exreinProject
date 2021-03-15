@@ -33,3 +33,40 @@
 .desc-layout__analytics {
   margin: 0;
 }
+
+.desc-layout__link {
+  box-sizing: border-box;
+  margin: 20px 0 0;
+  padding: 10px 60px;
+  justify-self: self-start;
+
+  font-family: $gilroy;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $trueWhite;
+  text-decoration: none;
+
+  background: #CBA55C;
+  border: none;
+  border-radius: 40px;
+
+  cursor: pointer;
+
+  @include smooth;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #CBA55C;
+  }
+
+  @media screen and (max-width: 768px) {
+    align-self: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
