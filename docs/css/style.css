@@ -2354,10 +2354,6 @@ input[type="radio"].visually-hidden {
     line-height: 25px;
   }
 
-  .desc__heading {
-    text-align: center;
-  }
-
   .desc__paragraph {
     font-size: 16px;
     line-height: 20px;
@@ -2573,10 +2569,9 @@ input[type="radio"].visually-hidden {
     font-weight: 600;
   }
 
-  .desc {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .desc__link {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   .desc-layout {
