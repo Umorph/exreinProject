@@ -148,3 +148,15 @@
     margin-top: 30px;
   }
 }
+
+.main-content__form {
+  margin: 65px auto 0;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+}
