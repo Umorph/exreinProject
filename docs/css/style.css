@@ -2623,7 +2623,6 @@ input[type="radio"].visually-hidden {
 
   .desc-layout__heading {
     grid-area: auto;
-    justify-self: center;
   }
 
   .desc-layout__link {
