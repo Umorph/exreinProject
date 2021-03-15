@@ -169,42 +169,8 @@
   justify-content: center;
   align-items: center;
 
-  //&::before,
-  //&::after {
-  //  content: none;
-  //  position: absolute;
-  //  left: 50%;
-  //
-  //  display: block;
-  //  width: 30px;
-  //  height: 30px;
-  //
-  //  background-image: url("../img/arrow.svg");
-  //  background-position: center center;
-  //  background-repeat: no-repeat;
-  //  background-size: contain;
-  //
-  //  transform: translateX(-32px);
-  //}
-  //
-  //&::before {
-  //  top: 0;
-  //}
-  //
-  //&::after {
-  //  top: -9px;
-  //
-  //  transform: translateX(-45px);
-  //  opacity: 0.1;
-  //}
-
   @media screen and (max-width: 768px)  {
     grid-area: 3 / 2 / 4 / 3;
-
-    //&::before,
-    //&::after {
-    //  content: "";
-    //}
   }
 
   @media screen and (max-width: 500px)  {
@@ -308,7 +274,6 @@
   align-items: center;
 
   @media screen and (max-width: 768px)  {
-    //justify-content: flex-end;
     grid-area: 2 / 2 / 3 / 3;
   }
 
@@ -327,7 +292,7 @@
 
   font-family: $gilroy;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0;
   line-height: 17px;
   color: $darkGrey;
 
@@ -362,8 +327,24 @@
     opacity: 0.1;
   }
 
+  &--no-arrow {
+    padding-top: 10px;
+    font-size: 13px;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    @media screen and (max-width: 768px)  {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 768px)  {
     padding: 0 0 40px;
+
+    font-size: 14px;
 
     &::before,
     &::after {
